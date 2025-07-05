@@ -1,0 +1,299 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <!-- Flowbite  -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/flowbite@3.1.2/dist/flowbite.min.css"
+      rel="stylesheet"
+    />
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+
+    <!-- CSS -->
+    <style>
+    </style>
+  </head>
+  <body class="max-w-screen-xl mx-auto px-4 py-20 lg:px-8 gap-8">
+    <div class="">
+      <div class="mb-4 border-b border-gray-200">
+        <ul
+          class="flex justify-center flex-wrap -mb-px text-sm font-medium text-center"
+          id="default-tab"
+          data-tabs-toggle="#default-tab-content"
+          role="tablist"
+        >
+          <!-- Bài tập 1 -->
+          <li class="me-2" role="presentation">
+            <button
+              class="inline-block p-4 border-b-2 rounded-t-lg"
+              id="bt1-tab"
+              data-tabs-target="#bt1"
+              type="button"
+              role="tab"
+              aria-controls="bt1"
+              aria-selected="false"
+            >
+              Bài tập 1
+            </button>
+          </li>
+          <!-- Bài tập 2 -->
+          <li class="me-2" role="presentation">
+            <button
+              class="inline-block p-4 border-b-2 rounded-t-lg hover:text-gray-600 hover:border-gray-300 dark:hover:text-gray-300"
+              id="bt2-tab"
+              data-tabs-target="#bt2"
+              type="button"
+              role="tab"
+              aria-controls="bt2"
+              aria-selected="false"
+            >
+              Bài tập 2
+            </button>
+          </li>
+          <!-- Bài tập 3 -->
+          <li class="me-2" role="presentation">
+            <button
+              class="inline-block p-4 border-b-2 rounded-t-lg hover:text-gray-600 hover:border-gray-300 dark:hover:text-gray-300"
+              id="bt3-tab"
+              data-tabs-target="#bt3"
+              type="button"
+              role="tab"
+              aria-controls="bt3"
+              aria-selected="false"
+            >
+              Bài tập 3
+            </button>
+          </li>
+          <!-- Bài tập 4 -->
+          <li role="presentation">
+            <button
+              class="inline-block p-4 border-b-2 rounded-t-lg hover:text-gray-600 hover:border-gray-300 dark:hover:text-gray-300"
+              id="bt4-tab"
+              data-tabs-target="#bt4"
+              type="button"
+              role="tab"
+              aria-controls="bt4"
+              aria-selected="false"
+            >
+              Bài tập 4
+            </button>
+          </li>
+          <!-- Bài tập 5 -->
+          <li role="presentation">
+            <button
+              class="inline-block p-4 border-b-2 rounded-t-lg hover:text-gray-600 hover:border-gray-300 dark:hover:text-gray-300"
+              id="bt5-tab"
+              data-tabs-target="#bt5"
+              type="button"
+              role="tab"
+              aria-controls="bt5"
+              aria-selected="false"
+            >
+              Bài tập 5
+            </button>
+          </li>
+        </ul>
+      </div>
+      <!-- Bài tập 1 -->
+      <div id="default-tab-content">
+        <div
+          class="hidden flex flex-col rounded-lg bg-[#f0fdf4] px-10 py-5"
+          id="bt1"
+          role="tabpanel"
+          aria-labelledby="bt1-tab"
+        >
+          <h1 class="font-bold text-2xl text-[#166334] mb-5">
+            💰 Tính tiền lương nhân viên
+          </h1>
+          <div class="grid grid-cols-2 gap-5">
+            <input
+              type="number"
+              id="heSoLuong"
+              placeholder="Nhập lương một ngày"
+              class="rounded-[10px]"
+            />
+            <input
+              type="number"
+              id="soNgayLam"
+              placeholder="Số ngày làm"
+              class="rounded-[10px]"
+            />
+          </div>
+
+          <br />
+          <button
+            id="btnTinhLuong"
+            class="px-[12.5px] py-[10px] border-0 rounded-[100px] bg-[#437057] cursor-pointer w-[25%] text-white font-semibold mb-5"
+          >
+            Tính lương
+          </button>
+          <div class="bg-white px-8 py-4">
+            <span class="pr-[10px]">👉</span>
+            <span id="kqLuong" class="font-semibold"></span>
+          </div>
+        </div>
+        <!-- Bài tập 2 -->
+        <div
+          class="hidden flex flex-col rounded-lg bg-[#f0fdf4] px-10 py-5"
+          id="bt2"
+          role="tabpanel"
+          aria-labelledby="bt2-tab"
+        >
+          <h1 class="font-bold text-2xl text-[#166334] mb-5">
+            📚 Tính giá trị trung bình
+          </h1>
+          <div class="grid grid-cols-3 gap-5">
+            <input
+              type="number"
+              id="number-1"
+              placeholder="Nhập số thứ nhất"
+              class="rounded-[10px]"
+            />
+            <input
+              type="number"
+              id="number-2"
+              placeholder="Nhập số thứ hai"
+              class="rounded-[10px]"         
+            />
+            <input
+              type="number"
+              id="number-3"
+              placeholder="Nhập số thứ ba"
+              class="rounded-[10px]"
+            />
+            <input
+              type="number"
+              id="number-4"
+              placeholder="Nhập số thứ tư"
+              class="rounded-[10px]"
+            />
+            <input
+              type="number"
+              id="number-5"
+              placeholder="Nhập số thứ năm"
+              class="rounded-[10px]"
+            />
+          </div>
+
+          <br />
+          <button
+            id="btnTinhTrungBinh"
+            class="px-[12.5px] py-[10px] border-0 rounded-[100px] bg-[#437057] cursor-pointer w-[25%] text-white font-semibold mb-5"
+          >
+            Tính trung bình
+          </button>
+          <div class="bg-white px-8 py-4">
+            <span class="pr-[10px]">👉</span>
+            <span id="kqTb" class="font-semibold"></span>
+          </div>
+        </div>
+        <!-- Bài tập 3 -->
+        <div
+          class="hidden flex flex-col rounded-lg bg-[#f0fdf4] px-10 py-5"
+          id="bt3"
+          role="tabpanel"
+          aria-labelledby="bt3-tab"
+        >
+          <h1 class="font-bold text-2xl text-[#166334] mb-5">
+            💱 Quy đổi tiền
+          </h1>
+          <div class="grid grid-cols-3 gap-5">
+            <input
+              type="number"
+              id="USD"
+              placeholder="Nhập số tiền USD"
+              class="rounded-[10px]"
+            />
+          </div>
+
+          <br />
+          <button
+            id="btnQuyDoiTien"
+            class="px-[12.5px] py-[10px] border-0 rounded-[100px] bg-[#437057] cursor-pointer w-[25%] text-white font-semibold mb-5"
+          >
+            Quy đổi tiền
+          </button>
+          <div class="bg-white px-8 py-4">
+            <span class="pr-[10px]">👉</span>
+            <span id="kqTien" class="font-semibold"></span>
+          </div>
+        </div>
+        <!-- Bài tập 4 -->
+        <div
+          class="hidden flex flex-col rounded-lg bg-[#f0fdf4] px-10 py-5"
+          id="bt4"
+          role="tabpanel"
+          aria-labelledby="bt4-tab"
+        >
+          <h1 class="font-bold text-2xl text-[#166334] mb-5">
+            📏 Tính diện tích, chu vi hình chữ nhật
+          </h1>
+          <div class="grid grid-cols-2 gap-5">
+            <input
+              type="number"
+              id="chieuDai"
+              placeholder="Nhập chiều dài"
+              class="rounded-[10px]"
+            />
+            <input
+              type="number"
+              id="chieuRong"
+              placeholder="Nhập chiều rộng"
+              class="rounded-[10px]"
+            />
+          </div>
+
+          <br />
+          <button
+            id="btnTinh"
+            class="px-[12.5px] py-[10px] border-0 rounded-[100px] bg-[#437057] cursor-pointer w-[25%] text-white font-semibold mb-5"
+          >
+            Tính
+          </button>
+          <div class="bg-white px-8 py-4">
+            <span class="pr-[10px]">👉</span>
+            <span id="kqTinh" class="font-semibold"></span>
+          </div>
+        </div>
+        <!-- Bài tập 5 -->
+        <div
+          class="hidden flex flex-col rounded-lg bg-[#f0fdf4] px-10 py-5"
+          id="bt5"
+          role="tabpanel"
+          aria-labelledby="bt5-tab"
+        >
+          <h1 class="font-bold text-2xl text-[#166334] mb-5">
+            🧮 Tính tổng 2 ký số
+          </h1>
+          <div class="grid grid-cols-3 gap-5">
+            <input
+              type="number"
+              id="numberTwo"
+              placeholder="Nhập số có 2 chữ số"
+              class="rounded-[10px]"
+            />
+          </div>
+
+          <br />
+          <button
+            id="btnTongChuSo"
+            class="px-[12.5px] py-[10px] border-0 rounded-[100px] bg-[#437057] cursor-pointer w-[25%] text-white font-semibold mb-5"
+          >
+            Tính
+          </button>
+          <div class="bg-white px-8 py-4">
+            <span class="pr-[10px]">👉</span>
+            <span id="kqTongChuSo" class="font-semibold"></span>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Flowbite -->
+    <script src="https://cdn.jsdelivr.net/npm/flowbite@3.1.2/dist/flowbite.min.js"></script>
+    <script src="./main.js"></script>
+  </body>
+</html>
